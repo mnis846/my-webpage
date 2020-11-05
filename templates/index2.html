@@ -1,0 +1,27 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+      <title>Home</title>
+      <style>
+        h1{
+          text-align: center;
+          background-color: RED;
+        }
+        ul{
+          text-align:center;
+          background-color:gray
+        }
+        body{
+          background-color: brown;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>List </h1>
+    <ul>
+        {% for name in names  %}
+          <li>{{name}}</li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
