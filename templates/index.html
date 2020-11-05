@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Home</title>
+      <title>Is it NewYear?</title>
+      <style>
+          body{
+            text-align: center;
+            padding: 3px
+          }
+      </style>
   </head>
   <body>
-      <h1>{{headline}}</h1>
+    {% if new_year %}
+        <h1>Yes! this is new Year and happy new Year</h1>
+    {% else %}
+        <h1>No!</h1>
+        {% endif %}
   </body>
 
 </html>
