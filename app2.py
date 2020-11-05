@@ -4,5 +4,5 @@ app= Flask(__name__)
 
 @app.route('/')
 def index():
-    headline = "hello , World"
-    return render_template("index.html", headline = headline)
+    names=["Alice", "Bob", "Charlie"]
+    return render_template("index2.html", names=names)
